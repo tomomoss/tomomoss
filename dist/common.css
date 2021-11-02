@@ -1,0 +1,135 @@
+* {
+  color: #333333;
+  font: 500 1rem/175% "Zen Kaku Gothic Antique", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  background: white;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.header__in-page-link {
+  border-bottom: 0.3rem solid transparent;
+  display: inline-block;
+  padding: 1rem 1rem 0.7rem;
+  transition: border-bottom-color 0.1s;
+}
+.header__in-page-link--being-displayed {
+  border-bottom-color: #cccccc;
+}
+.header__in-page-link-list {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.main__content {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 672px;
+  width: 100%;
+}
+.main__content-item {
+  margin: 1rem;
+}
+.main__content-item:nth-of-type(n + 2) {
+  border-top: 0.2rem dotted #cccccc;
+}
+@media screen and (min-width: 672px) {
+  .main__content-item {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1), 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+  }
+  .main__content-item:nth-of-type(n + 2) {
+    border-top: none;
+  }
+}
+.main__content-item p {
+  margin: 1.5rem 0;
+}
+@media screen and (min-width: 672px) {
+  .main__content-item p {
+    margin: 1.5rem;
+  }
+}
+.main__content-item-part-title {
+  font-size: 1.25rem;
+  margin: 5rem 1rem 1rem;
+}
+.main__content-item-title {
+  font-size: 1.5rem;
+  margin: 2.5rem 1rem 2.5rem;
+  text-align: center;
+}
+.main__content-title {
+  border-bottom: 0.25rem dashed #cccccc;
+  display: inline-block;
+  font-size: 2rem;
+  margin: 0 0 5rem;
+  padding: 0 3rem 1rem;
+}
+.main__list {
+  margin: 1rem;
+  padding: 0 0.5rem;
+}
+.main__list-item {
+  border-bottom: 0.1rem solid #cccccc;
+  padding: 0 1rem 0.5rem;
+}
+.main__list-item:nth-of-type(n + 2) {
+  margin: 1.5rem 0 0;
+}
+.main__profil-head {
+  padding-right: 1.5rem;
+  text-align: left;
+  vertical-align: top;
+}
+.main__sample-video {
+  border: 0.5rem solid #eeeeee;
+  box-sizing: border-box;
+  margin: 1rem;
+  width: calc(100% - 2rem);
+}
+.main__sample-video:hover {
+  filter: brightness(102.5%);
+}
+.main__sns-icon {
+  display: inline-block;
+  height: 2rem;
+  filter: contrast(999%) contrast(50%);
+  padding: 0 0.5rem;
+  position: relative;
+  z-index: 0;
+}
+.main__sns-icon-list {
+  display: flex;
+  margin: 3rem 0 0;
+}
+
+.footer {
+  margin: 1rem;
+  text-align: center;
+}
+.footer__copyright {
+  color: #999999;
+  font-size: 0.85rem;
+}
+
+/*# sourceMappingURL=common.css.map */

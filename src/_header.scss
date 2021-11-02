@@ -1,0 +1,27 @@
+// ヘッダーです。
+.header {
+  background: rgb(255, 255, 255);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 10%);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  
+  // 当ポートフォリオを構成する主要なコンテンツへの内部リンクです。
+  &__in-page-link {
+    border-bottom: .3rem solid transparent;
+    display: inline-block;
+    padding: 1rem 1rem .7rem;
+    transition: border-bottom-color .1s;
+
+    // 現在ビューポート上に表示中のコンテンツを表すスタイルです。
+    &--being-displayed {
+      border-bottom-color: rgb(204, 204, 204);
+    }
+  }
+
+  // 内部リンクをまとめた一覧です。
+  &__in-page-link-list {
+    display: flex;
+    justify-content: center;
+  }
+}
