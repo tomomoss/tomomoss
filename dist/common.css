@@ -38,6 +38,12 @@ ul {
   align-items: center;
   display: flex;
   flex-flow: column nowrap;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.main::-webkit-scrollbar {
+  display: none;
 }
 .main__content {
   align-items: center;
