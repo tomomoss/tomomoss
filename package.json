@@ -15,7 +15,7 @@
     "build:sass": "sass ./src/common.scss ./dist/common.css",
     "build:typescript": "webpack",
     "watch": "npm-run-all --parallel watch:*",
-    "watch:html": "chokidar ./src/index.html --command \"npm run build:html\"",
+    "watch:html": "npm run build:html; chokidar ./src/index.html --command \"npm run build:html\"",
     "watch:sass": "sass --watch ./src/common.scss ./dist/common.css",
     "watch:typescript": "webpack --watch"
   }
