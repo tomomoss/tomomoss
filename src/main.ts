@@ -1,6 +1,6 @@
 import {
   playTitleAnimation
-} from "./title-animation/title-animation";
+} from "./title-animation";
 
 /**
  * ヘッダーを表すHTML要素を取得します。

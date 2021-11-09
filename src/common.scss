@@ -2,3 +2,7 @@
 @use "./_header";
 @use "./_main";
 @use "./_footer";
+
+body {
+  overflow-x: hidden;
+}
