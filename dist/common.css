@@ -14,14 +14,15 @@ ul {
 }
 
 .header {
-  background: white;
-  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+  background: #666666;
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
   position: sticky;
   top: 0;
   z-index: 1;
 }
 .header__in-page-link {
   border-bottom: 0.3rem solid transparent;
+  color: white;
   display: inline-block;
   padding: 1rem 1rem 0.7rem;
   transition: border-bottom-color 0.1s;
