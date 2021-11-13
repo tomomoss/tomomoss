@@ -525,7 +525,7 @@ class Mascot3 {
  */
 class Progress {
   constructor() {
-    this.#limit = 1000;
+    this.#limit = 750;
     this.#rate = 0;
   }
 
