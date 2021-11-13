@@ -1,0 +1,11 @@
+// フッターです。
+.footer {
+  margin: 1rem;
+  text-align: center;
+
+  // 当ポートフォリオの権利者情報です。
+  &__copyright {
+    color: rgb(153, 153, 153);
+    font-size: .85rem;
+  }
+}

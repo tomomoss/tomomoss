@@ -1,0 +1,111 @@
+// 当ポートフォリオを構成する主要な要素の区画の最大横幅です。
+$max-width: calc(1920px * .35);
+
+// 当ページの主要な内容です。
+.main {
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+
+  // 当ポートフォリオを構成する主要なコンテンツです。
+  &__content {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: $max-width;
+    width: 100%;
+  }
+
+  // 当ポートフォリオを構成する主要なコンテンツを構成する区画です。
+  &__content-item {
+    margin: 1rem;
+    &:nth-of-type(n + 2) {
+      border-top: .2rem dotted rgb(204, 204, 204);
+    }
+    @media screen and (min-width: $max-width) {
+      box-shadow: 0 0 1rem rgba(0, 0, 0, 10%), 0 .1rem .5rem rgba(0, 0, 0, 10%);
+      &:nth-of-type(n + 2) {
+        border-top: none;
+      }
+    }
+    p {
+      margin: 1.5rem 0;
+      @media screen and (min-width: $max-width) {
+        margin: 1.5rem;
+      }
+    }
+  }
+
+  // 当ポートフォリオを構成する主要なコンテンツを構成する区画を構成する区画名です。
+  &__content-item-part-title {
+    font-size: 1.25rem;
+    margin: 5rem 1rem 1rem;
+  }
+
+  // 当ポートフォリオを構成する主要なコンテンツを構成する区画名です。
+  &__content-item-title {
+    font-size: 1.5rem;
+    margin: 2.5rem 1rem 2.5rem;
+    text-align: center;
+  }
+
+  // 各コンテンツの題名です。
+  &__content-title {
+    border-bottom: .25rem dashed rgb(204, 204, 204);
+    display: inline-block;
+    font-size: 2rem;
+    margin: 0 0 5rem;
+    padding: 0 3rem 1rem;
+  }
+
+  // 一覧です。
+  &__list {
+    margin: 1rem;
+    padding: 0 .5rem;
+  }
+
+  // 一覧の構成要素です。
+  &__list-item {
+    border-bottom: .1rem solid rgb(204, 204, 204);
+    padding: 0 1rem .5rem;
+    &:nth-of-type(n + 2) {
+      margin: 1.5rem 0 0;
+    }
+  }
+
+  // 自己紹介文を記述した<table>タグの見出しセルです。
+  &__profil-head {
+    padding-right: 1.5rem;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  // 自作成果物のサンプルムービーです。
+  &__sample-video {
+    border: .5rem solid rgb(238, 238, 238);
+    box-sizing: border-box;
+    margin : 1rem;
+    width: calc(100% - 2rem);
+    &:hover {
+      filter: brightness(102.5%);
+    }
+  }
+
+  // 私が使用しているSNSアカウントページへのリンクです。
+  // filterプロパティが指定されているとHTML要素の重ね順が初期設定から変わってしまうためz-indexプロパティ値を指定しています。
+  &__sns-icon {
+    display: inline-block;
+    height: 2rem;
+    filter: contrast(999%) contrast(50%);
+    padding: 0 .5rem;
+    position: relative;
+    z-index: 0;
+  }
+
+  // 私が使用しているSNSアカウントページへのリンクをまとめた一覧です。
+  &__sns-icon-list {
+    display: flex;
+    margin: 3rem 0 0;
+  }
+}
