@@ -1,7 +1,3 @@
-import {
-  playTitleAnimation
-} from "./title-animation";
-
 /**
  * ヘッダーを表すHTML要素を取得します。
  * @returns {Element} ヘッダーを表すHTML要素です。
@@ -147,6 +143,3 @@ implementInPageScrolling();
 implementProcessingThatResizeMinHeightOfContents();
 setMarginTopOfContentTitles();
 setPaddingTopOfProfilRow();
-
-// タイトルアニメーションを再生します。
-requestAnimationFrame(playTitleAnimation);

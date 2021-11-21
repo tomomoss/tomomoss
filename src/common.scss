@@ -1,8 +1,5 @@
-@use "./_reset";
+@use "./_footer";
 @use "./_header";
 @use "./_main";
-@use "./_footer";
-
-body {
-  overflow-x: hidden;
-}
+@use "./_reset";
+@use "./_title";
