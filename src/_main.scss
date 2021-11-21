@@ -1,5 +1,4 @@
-// 当ポートフォリオを構成する主要な要素の区画の最大横幅です。
-$max-width: calc(1920px * .35);
+@use "./_utilities";
 
 // 当ページの主要な内容です。
 .main {
@@ -13,7 +12,7 @@ $max-width: calc(1920px * .35);
     box-sizing: border-box;
     display: flex;
     flex-flow: column nowrap;
-    max-width: $max-width;
+    max-width: utilities.$max-width-of-contents;
     width: 100%;
   }
 
@@ -23,7 +22,7 @@ $max-width: calc(1920px * .35);
     &:nth-of-type(n + 2) {
       border-top: .2rem dotted rgb(204, 204, 204);
     }
-    @media screen and (min-width: $max-width) {
+    @media screen and (min-width: utilities.$max-width-of-contents) {
       box-shadow: 0 0 1rem rgba(0, 0, 0, 10%), 0 .1rem .5rem rgba(0, 0, 0, 10%);
       &:nth-of-type(n + 2) {
         border-top: none;
@@ -31,7 +30,7 @@ $max-width: calc(1920px * .35);
     }
     p {
       margin: 1.5rem 0;
-      @media screen and (min-width: $max-width) {
+      @media screen and (min-width: utilities.$max-width-of-contents) {
         margin: 1.5rem;
       }
     }

@@ -1,0 +1,48 @@
+@use "./_utilities";
+
+// 当ポートフォリオのタイトルです。
+.title {
+  justify-content: center;
+
+  // 当ポートフォリオの主のアバターイメージです。
+  &__avatar-image {
+    border-radius: 50%;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 10%);
+    height: 15rem;
+    object-fit: cover;
+    width: 15rem;
+  }
+
+  // 当ポートフォリオの主のアバターイメージの影です。
+  &__shadow-of-avatar-image {
+    background: rgba(0, 0, 0, 10%);
+    border-radius: 100%;
+    filter: blur(.15rem);
+    height: 2rem;
+    margin: 0 0 3rem;
+    position: relative;
+    top: -1rem;
+    width: 15rem;
+  }
+
+  // タイトルを構成する文章1です。
+  &__text1 {
+    color: rgb(153, 153, 153);
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: .4rem;
+    margin: 0 0 1rem;
+    padding: 0 1rem;
+    @media screen and (max-width: utilities.$max-width-of-contents) {
+      font-size: 9vw;
+      letter-spacing: .9vw;
+    }
+  }
+
+  // タイトルを構成する文章2です。
+  &__text2 {
+    color: rgb(153, 153, 153);
+    font-weight: 600;
+    margin: 0 0 3rem;
+  }
+}

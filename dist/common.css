@@ -1,16 +1,10 @@
-* {
-  color: #333333;
-  font: 500 1rem/175% "Zen Kaku Gothic Antique", sans-serif;
-  margin: 0;
-  padding: 0;
+.footer {
+  margin: 1rem;
+  text-align: center;
 }
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
+.footer__copyright {
+  color: #999999;
+  font-size: 0.85rem;
 }
 
 .header {
@@ -124,17 +118,59 @@ ul {
   margin: 3rem 0 0;
 }
 
-.footer {
-  margin: 1rem;
-  text-align: center;
-}
-.footer__copyright {
-  color: #999999;
-  font-size: 0.85rem;
+* {
+  color: #333333;
+  font: 500 1rem/175% "Zen Kaku Gothic Antique", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-body {
-  overflow-x: hidden;
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.title {
+  justify-content: center;
+}
+.title__avatar-image {
+  border-radius: 50%;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+  height: 15rem;
+  object-fit: cover;
+  width: 15rem;
+}
+.title__shadow-of-avatar-image {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+  filter: blur(0.15rem);
+  height: 2rem;
+  margin: 0 0 3rem;
+  position: relative;
+  top: -1rem;
+  width: 15rem;
+}
+.title__text1 {
+  color: #999999;
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: 0.4rem;
+  margin: 0 0 1rem;
+  padding: 0 1rem;
+}
+@media screen and (max-width: 672px) {
+  .title__text1 {
+    font-size: 9vw;
+    letter-spacing: 0.9vw;
+  }
+}
+.title__text2 {
+  color: #999999;
+  font-weight: 600;
+  margin: 0 0 3rem;
 }
 
 /*# sourceMappingURL=common.css.map */
