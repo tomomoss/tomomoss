@@ -12,6 +12,7 @@
     box-sizing: border-box;
     display: flex;
     flex-flow: column nowrap;
+    justify-content: center;
     max-width: utilities.$max-width-of-contents;
     width: 100%;
   }
